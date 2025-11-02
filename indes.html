@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Atrapa la Estrella - Ky</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Modificar sólo las letras blancas -->
+  <div class="game-wrapper">
+    <header>
+      <h1 class="glow">🌠 Atrapa las Estrellas - Laboratorio 5.0 — Ky 🌠</h1>
+    </header>
+
+    <div class="hud">
+      <div class="panel">⭐ Puntos: <span id="score">0</span></div>
+      <div class="panel">⏳ Tiempo: <span id="time">30</span>s</div>
+    </div>
+
+    <div id="arena" class="arena" aria-label="Área de juego">
+      <div id="star" class="star" role="button" title="¡Haz clic!">★</div>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">🎮 Iniciar juego</button>
+      <button id="resetBtn">🔁 Reiniciar</button>
+    </div>
+
+    <div id="message" class="message" aria-live="polite"></div>
+  </div>
+
+  <!-- Sonidos locales -->
+  <audio id="clickSound" src="click.wav" preload="auto"></audio>
+  <audio id="startSound" src="start.wav" preload="auto"></audio>
+  <audio id="endSound" src="end.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
